@@ -6,7 +6,7 @@
 #configurations which needn't be changed only if you know what you're doing
 #must end up with "/"
 tmpdir="/tmp/dropbox-backup/"
-dropbox_dir="/raspibackup/"
+dropbox_dir="/autobackup/"
 dropbox_uploader_git_repo="https://github.com/andreafabrizi/Dropbox-Uploader.git"
 
 #test if git exists
@@ -49,7 +49,7 @@ for f in $files_to_backup;do
         echo "error at creating tarball for $f"
     fi
 done
-echo "Uploading to dropbox..."
+echo "...Uploading to dropbox..."
 datenow=`date -d today +"%Y-%m-%d-%H:%M:%S"`
-bash ${pwd}/Dropbox-Uploader/dropbox_uploader.sh upload $tmpdir ${dropbox_dir}$datenow -q
+${pwd}/Dropbox-Uploader/dropbox_uploader.sh upload $tmpdir ${dropbox_dir}$datenow
 echo "finished."
