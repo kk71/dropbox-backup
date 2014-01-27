@@ -24,7 +24,7 @@ backup files or folders into dropbox.
 
 ### Usage
 
-'''bash
+```bash
     ./dropbox_backup.sh #install and initial, or show help
     ./dropbox_backup.sh --help #show help
 
@@ -35,11 +35,12 @@ backup files or folders into dropbox.
     #for systemd
     ./dropbox_backup.sh --install-service [backup interval] #install as a service and start
     ./dropbox_backup.sh --delete-service #delete service
-'''
+```
 
 intervals are hours(h).
 
 ### Notice
 
 system-wide proxy is supported. since dropbox is often unreacheable in some countries, it's recommanded to use a proxy or a wall-breaker to access dropbox.
+
 [GoAgent - a gae proxy forked from gappproxy/wallproxy](https://code.google.com/p/goagent/)
