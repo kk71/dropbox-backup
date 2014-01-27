@@ -17,7 +17,7 @@ backup files or folders into dropbox.
     git clone https://github.com/kk71/dropbox_backup.git
     cd dropbox_backup
     chmod +x backup.sh
-    ./backup.sh
+    ./dropbox_backup.sh
     vim ~/.dropbox_backup #add folders or files to backup.
 ```
 
