@@ -4,7 +4,7 @@ Wants=network.target
 
 [Service]
 Type=simple
-ExecStart=/bin/bash "dropbox_backup_pwd/backup.sh --daemon backup_interval"
+ExecStart=/bin/bash "dropbox_backup_pwd/dropbox_backup.sh --daemon backup_interval"
 
 [Install]
 WantedBy=multi-user.target

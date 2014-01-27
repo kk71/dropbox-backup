@@ -9,6 +9,7 @@
 tmpdir="/tmp/dropbox-backup/"
 dropbox_dir="/autobackup/"
 dropbox_uploader_git_repo="https://github.com/andreafabrizi/Dropbox-Uploader.git"
+cd `dirname $0` 
 
 #show info in green font
 function put {
